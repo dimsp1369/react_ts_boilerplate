@@ -19,6 +19,7 @@ module.exports = {
    plugins: [
       'react',
       '@typescript-eslint',
+      'react-hooks',
    ],
    rules: {
       'react/jsx-indent': [2, 3],
@@ -36,5 +37,7 @@ module.exports = {
       'import/prefer-default-export': 'off',
       'react/function-component-definition': 'off',
       'arrow-body-style': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
    },
 };

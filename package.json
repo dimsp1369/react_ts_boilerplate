@@ -7,10 +7,11 @@
     "start": "webpack serve --env port=3000",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env port=production",
-    "lint:check": "eslint \"**/*.{ts,tsx}\"",
-    "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:ts:check": "eslint \"**/*.{ts,tsx}\"",
+    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:style:check": "npx stylelint \"**/*.scss\"",
-    "lint:style:fix": "npx stylelint \"**/*.scss\" --fix"
+    "lint:style:fix": "npx stylelint \"**/*.scss\" --fix",
+    "lint:fix": "npm run lint:fix && npm run lint:style:fix"
   },
   "author": "",
   "license": "ISC",
